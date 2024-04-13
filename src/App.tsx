@@ -15,11 +15,11 @@ const router = createHashRouter([
         path: "",
         element: <Blogs />,
       },
-      {
-        path: "resume",
-        element: <Resume />,
-      },
     ],
+  },
+  {
+    path: "/resume",
+    element: <Resume />,
   },
 ]);
 
