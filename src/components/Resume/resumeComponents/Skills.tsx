@@ -71,7 +71,7 @@ const Skills = () => {
         {liItems.map((item) => (
           <li key={item.text} className={liClassName}>
             {item.icon}
-            <Link to={item.url} target="_blank" className=" text-xs">
+            <Link to={item.url} target="_blank" className="text-xs">
               {item.text}
             </Link>
           </li>

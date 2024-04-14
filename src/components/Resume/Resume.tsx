@@ -27,7 +27,7 @@ const Resume = () => {
         </svg>
         <span>Go Back</span>
       </Link>
-      <div className=" container flex flex-col gap-1 text-sm ">
+      <div className=" container flex flex-col gap-1">
         <div className=" mb-5 ">
           <h1 className=" text-center font-semibold text-3xl uppercase">
             Md. Ibrahim Khalil
