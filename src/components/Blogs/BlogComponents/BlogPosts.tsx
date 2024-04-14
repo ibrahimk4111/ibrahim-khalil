@@ -6,24 +6,24 @@ const BlogPosts = () => {
   return (
     <>
       {posts.map((post, index) => (
-        <div className=" border border-slate-400 p-1 rounded-md ">
+        <div key={index} className=" border border-slate-400 p-1 rounded-md ">
           <div key={index} className=" grid grid-cols-12 gap-5 ">
-            <div className=" col-span-4 overflow-hidden rounded-md flex justify-center items-center ">
+            <div className="lg:col-span-4 col-span-12 overflow-hidden rounded-md flex justify-center items-center ">
               <img src="./assunnah-complex.jpg" alt=".." />
             </div>
-            <div className="col-span-8 flex flex-col justify-between gap-2">
+            <div className="lg:col-span-8 col-span-12 flex flex-col justify-between gap-2 p-2">
               <header>
                 <h1 className=" cursor-pointer text-xl hover:text-orange-400 hover:underline underline-offset-4 ">
                   {post.blogHeader}
                 </h1>
               </header>
-              <body>
+              <main>
                 <div className=" text-sm text-justify ">
                   {post.blogBody.trim().length > 200
                     ? post.blogBody.slice(0, 150) + "...."
                     : post.blogBody}
                 </div>
-              </body>
+              </main>
               <footer className=" flex justify-between items-center text-sm ">
                 <div className=" flex items-center gap-3">
                   <button>

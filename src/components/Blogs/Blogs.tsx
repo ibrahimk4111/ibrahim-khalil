@@ -3,14 +3,14 @@ import BlogPosts from "./BlogComponents/BlogPosts";
 const Blogs = () => {
   return (
     <div className=" w-full ">
-      <div className=" container grid md:grid-cols-12 gap-3 ">
+      <div className=" grid grid-cols-12 gap-3 ">
         {/* left side or news feed */}
-        <div className=" md:col-span-8 p-2 flex flex-col gap-2">
+        <div className=" lg:col-span-8 col-span-12 p-2 flex flex-col gap-2">
           <BlogPosts />
         </div>
 
         {/* right side or table of content */}
-        <div className=" md:col-span-4 p-2 ">
+        <div className=" lg:col-span-4 col-span-12 p-2 ">
           <div className=" border border-slate-400 lg:sticky lg:top-10 p-2 rounded-md">
             <h1 className=" text-xl ">Table of content</h1>
             <hr className=" border-black mb-5  " />
