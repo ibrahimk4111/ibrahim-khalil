@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { FaBlogger } from "react-icons/fa6";
 import { BiCloudDownload } from "react-icons/bi";
 import { CreateContextProvider } from "../Context/ContextProvider";
-import { paths } from "../utils/paths";
+import { paths } from "../../utils/paths";
 
 const navItems = [
   {

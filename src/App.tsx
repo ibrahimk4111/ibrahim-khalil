@@ -5,7 +5,7 @@ import Resume from "./components/Resume/Resume.tsx";
 import Blogs from "./components/Blogs/Blogs.tsx";
 import LayOut from "./components/LayOut/LayOut.tsx";
 import ContextProvider from "./components/Context/ContextProvider.tsx";
-import { paths } from "./components/utils/paths.ts";
+import { paths } from "./utils/paths.ts";
 import Home from "./components/Home/Home.tsx";
 
 const router = createHashRouter([
