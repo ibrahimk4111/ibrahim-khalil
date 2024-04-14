@@ -16,7 +16,11 @@ export default {
         xxl: "1100px",
       },
     },
-    extend: {},
+    extend: {
+      fontSize:{
+        'xs' : "0.5em"
+      }
+    },
   },
   plugins: [],
 }
