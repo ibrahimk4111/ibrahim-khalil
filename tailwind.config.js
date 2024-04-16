@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -17,11 +15,13 @@ export default {
       },
     },
     extend: {
-      fontSize:{
-        'xs' : "0.5em"
-      }
+      fontSize: {
+        xs: "0.5em",
+      },
+      colors: {
+        bgColorsInDark: "var(--darkModeBgColor)",
+      },
     },
   },
   plugins: [],
-}
-
+};

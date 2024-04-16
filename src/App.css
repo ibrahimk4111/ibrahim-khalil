@@ -5,6 +5,11 @@
     min-height: 100vh;
 }
 
+:root{
+    --darkModeBgColor: #002824;
+    /* --darkModeBgColor: ; */
+}
+
 *{
     margin: 0px;
     padding: 0px;

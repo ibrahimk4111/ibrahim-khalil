@@ -9,7 +9,7 @@ const Resume = () => {
   const liClassName =
     "border border-slate-300 rounded-full px-1 flex items-center gap-1";
   return (
-    <div className="p-2">
+    <div className="p-2 dark:bg-bgColorsInDark dark:text-white">
       <Link
         to="/"
         className=" hover:bg-black/80 hover:text-white flex items-center gap-2 p-2 rounded-full w-28 text-sm transition-all duration-300 ease-in-out"
@@ -39,15 +39,15 @@ const Resume = () => {
           <ul className=" container flex sm:flex-row flex-col justify-center lg:gap-3 gap-1">
             <li className={liClassName}>
               <MdEmail size={15} />
-              <span className=" text-xs">ibrahimk4111@gmail.com</span>
+              <span className=" text-sm">ibrahimk4111@gmail.com</span>
             </li>
             <li className={liClassName}>
               <MdCall size={15} />
-              <span className=" text-xs">01517-833 878</span>
+              <span className=" text-sm">01517-833 878</span>
             </li>
             <li className={liClassName}>
               <GoLocation size={15} />
-              <span className=" text-xs ">Kakrail, Dhaka, Bangladesh</span>
+              <span className=" text-sm ">Kakrail, Dhaka, Bangladesh</span>
             </li>
             <li className={liClassName}>
               <Link to="https://github.com/ibrahimk4111" target="_blank">

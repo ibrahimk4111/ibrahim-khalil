@@ -5,14 +5,16 @@ import Footer from "../Footer/Footer";
 
 const LayOut = () => {
   return (
-    <div className=" flex ">
-      <Asidebar />
-      <div className=" h-[100vh] w-full overflow-auto ml-12">
-        <Navbar />
-        <Outlet />
-        <Footer />
+    <>
+      <Navbar />
+      <div className=" flex ">
+        <Asidebar />
+        <div className=" w-full md:ml-12 dark:bg-bgColorsInDark dark:text-white">
+          <Outlet />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
