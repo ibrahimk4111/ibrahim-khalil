@@ -7,7 +7,7 @@ const Blogs = () => {
       <div className=" grid grid-cols-12 gap-x-3 ">
         {/* left side or news feed */}
         <div className=" md:col-span-8 col-span-12 p-2 flex flex-col gap-2">
-          <div className=" grid lg:grid-cols-1 grid-cols-2 gap-2">
+          <div className=" grid sm:grid-cols-2 grid-cols-1 gap-2">
             {posts.map((post, index) => (
               <BlogPosts key={index} post={post} />
             ))}
