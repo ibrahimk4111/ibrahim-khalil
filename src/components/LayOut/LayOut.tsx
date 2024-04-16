@@ -9,7 +9,7 @@ const LayOut = () => {
       <Navbar />
       <div className=" flex ">
         <Asidebar />
-        <div className=" h-[100vh] w-full overflow-auto md:ml-12">
+        <div className=" w-full md:ml-12 dark:bg-bgColorsInDark dark:text-white">
           <Outlet />
           <Footer />
         </div>
