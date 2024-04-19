@@ -3,7 +3,7 @@ import { BiCloudDownload, BiCoffee } from "react-icons/bi";
 const Hero = () => {
   return (
     <>
-      <div className=" py-10 ">
+      <div className=" py-10 dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark ">
         <div className=" container grid grid-cols-12 gap-y-10">
           <div className=" sm:col-span-9 col-span-12 flex justify-center items-center">
             <div className=" relative ">
@@ -17,13 +17,19 @@ const Hero = () => {
               </h1>
               <p className=" dark:text-white ">MERN Stack Developer</p>
               <div className=" flex gap-2">
-                <button className=" flex items-center gap-2 mt-5 bg-slate-100 dark:bg-cyan-500 p-2 rounded-md hover:shadow hover:ring-1 ring-offset-1 dark:text-white hover:drop-shadow-glow">
-                  <BiCloudDownload size={20}  />
-                  <span>Resume</span>
+                <button className="bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+                  <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
+                  <span className="flex items-center gap-2 z-10 text-white">
+                    <BiCloudDownload size={20} />
+                    <span>Resume</span>
+                  </span>
                 </button>
-                <button className=" flex items-center gap-2 mt-5 bg-slate-100 dark:bg-cyan-500 p-2 rounded-md hover:shadow hover:ring-1 ring-offset-1 dark:text-white hover:drop-shadow-glow">
-                  <BiCoffee size={20} />
-                  <span>Hire me</span>
+                <button className=" bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+                  <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
+                  <span className="flex items-center gap-2 z-10 text-white">
+                    <BiCoffee size={20} />
+                    <span>Hire me</span>
+                  </span>
                 </button>
               </div>
             </div>

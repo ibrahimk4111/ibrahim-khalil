@@ -4,7 +4,7 @@ import Hero from "./homeComponents/Hero";
 const Home = () => {
   return (
     <div>
-      <div className="dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark">
+      <div >
         <Hero />
         <GetInTouch />
       </div>
