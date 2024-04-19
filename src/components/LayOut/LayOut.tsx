@@ -9,7 +9,7 @@ const LayOut = () => {
       <Navbar />
       <div className=" flex ">
         <Asidebar />
-        <div className=" w-full md:ml-12 dark:bg-bgColorsInDark dark:text-white">
+        <div className=" w-full md:ml-12 ">
           <Outlet />
           <Footer />
         </div>

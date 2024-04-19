@@ -21,6 +21,12 @@ export default {
       colors: {
         bgColorsInDark: "var(--darkModeBgColor)",
       },
+      dropShadow: {
+        glow: [
+          "0px 0px 5px cyan",
+          "0 0px 55px cyan",
+        ],
+      },
     },
   },
   plugins: [],

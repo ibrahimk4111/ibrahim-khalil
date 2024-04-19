@@ -1,5 +1,5 @@
 import { BiSolidCommentDetail } from "react-icons/bi";
-import { FaThumbsUp } from "react-icons/fa";
+import { CiCalendarDate } from "react-icons/ci";
 
 interface propsType {
   post: {
@@ -16,7 +16,7 @@ const BlogPosts = ({ post }: propsType) => {
   return (
     <>
       <div className=" bg-white dark:bg-[#082f2b] rounded-md">
-        <div className=" h-52 lg:h-36 overflow-hidden rounded-t-md flex justify-center items-center ">
+        <div className=" h-52 lg:h-48 overflow-hidden rounded-t-md flex justify-center items-center ">
           <img
             src={post.img}
             alt=".."
@@ -24,9 +24,9 @@ const BlogPosts = ({ post }: propsType) => {
             className=" h-auto w-auto "
           />
         </div>
-        <div className="flex flex-col justify-between gap-1 p-3 ">
+        <div className="flex flex-col justify-between gap-3 p-3 ">
           <header>
-            <h1 className=" cursor-pointer text-base font-semibold underline underline-offset-4 hover:text-orange-500 ">
+            <h1 className=" cursor-pointer text-base font-medium underline underline-offset-4 hover:text-cyan-500 dark:text-white ">
               {post.blogHeader}
             </h1>
           </header>
@@ -38,18 +38,16 @@ const BlogPosts = ({ post }: propsType) => {
             </div>
           </main>
           <footer className=" flex justify-between items-center ">
-            <div className=" flex items-center gap-2 ">
-              <button className=" flex items-center gap-1 text-sm ">
-                <FaThumbsUp fill="green" size={20} />
-                <span className=" text-sm ">{post.likes}</span>
-              </button>
+            <div className=" ">
               <button className=" flex items-center gap-1">
                 <BiSolidCommentDetail fill="green" size={20} />
-                <span className=" text-sm ">{post.comment.length}</span>
+                <span className=" text-sm text-slate-400 hover:text-slate-500 dark:hover:text-slate-200 ">{post.comment.length} comments</span>
               </button>
             </div>
-            <div className=" text-slate-400 text-sm ">3M Read</div>
-            <div className=" text-slate-400 text-sm ">{post.date}</div>
+            <div className=" flex gap-1 items-center ">
+              <CiCalendarDate size={18} fill="green"/>
+              <span className=" text-sm text-slate-400">{post.date}</span>
+            </div>
           </footer>
         </div>
       </div>
