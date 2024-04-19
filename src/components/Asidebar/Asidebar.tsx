@@ -24,7 +24,7 @@ const Asidebar = () => {
       <div
         className={`${
           expanded ? "w-52" : "md:w-12 w-0"
-        } ${animation} text-sm bg-white z-50 h-full fixed left-0 top-12 border-r-2 border-slate-300 dark:bg-bgColorsInDark `}
+        } ${animation} text-sm bg-white z-50 h-full fixed left-0 top-12 md:border-r-2 border-slate-300 dark:bg-bgColorsInDark `}
       >
         {/* Start Asidebar Tabs section */}
         <section>

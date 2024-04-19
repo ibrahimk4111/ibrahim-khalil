@@ -13,7 +13,7 @@ const AsidebarItem = ({text, expanded, icon }: propsType) => {
     <div>
       <section className=" flex items-center p-2 hover:underline underline-offset-8 ">
             <div
-            className=" cursor-pointer bg-slate-100 p-1 rounded-md flex justify-center items-center "
+            className=" cursor-pointer bg-slate-100 p-1 rounded-md flex justify-center items-center dark:text-cyan-900 "
             >
             {icon}
             </div>
