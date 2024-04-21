@@ -1,15 +1,18 @@
 import { MdCall, MdEmail } from "react-icons/md";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillFacebook, AiFillGithub, AiFillYoutube } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Projects from "./resumeComponents/Projects";
 import Skills from "./resumeComponents/Skills";
 import { GoLocation } from "react-icons/go";
+import Education from "./resumeComponents/Education";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Resume = () => {
   const liClassName =
-    "border border-slate-300 rounded-full px-1 flex items-center gap-1";
+    "border border-slate-300 rounded-full px-1 flex justify-center items-center gap-1";
   return (
-    <div className="p-2 dark:bg-bgColorsInDark dark:text-white">
+    <div className="p-2 pb-10 dark:bg-bgColorsInDark dark:text-white">
       <Link
         to="/"
         className=" hover:bg-black/80 hover:text-white flex items-center gap-2 p-2 rounded-full w-28 text-sm transition-all duration-300 ease-in-out"
@@ -36,7 +39,7 @@ const Resume = () => {
 
         {/* Start address section */}
         <section>
-          <ul className=" container flex sm:flex-row flex-col justify-center lg:gap-3 gap-1">
+          <ul className=" flex sm:flex-row flex-col justify-center lg:gap-3 gap-1">
             <li className={liClassName}>
               <MdEmail size={15} />
               <span className=" text-sm">ibrahimk4111@gmail.com</span>
@@ -49,20 +52,15 @@ const Resume = () => {
               <GoLocation size={15} />
               <span className=" text-sm ">Kakrail, Dhaka, Bangladesh</span>
             </li>
-            <li className={liClassName}>
-              <Link to="https://github.com/ibrahimk4111" target="_blank">
-                <AiFillGithub size={18} />
-              </Link>
-            </li>
           </ul>
         </section>
         {/* End address section */}
 
         {/* Start Summary section */}
         <section className=" mt-3 ">
-          <h1 className=" text-xl font-semibold py-1">Summary</h1>
-          <hr className=" h-1 bg-slate-300" />
-          <p className=" p-3 text-justify ">
+          <h1 className=" text-xl font-semibold py-1">Career</h1>
+          <hr className=" bg-slate-300" />
+          <p className=" py-3 text-justify ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quae
             suscipit ducimus ad iusto soluta obcaecati doloribus amet
             necessitatibus iure nulla optio dolore facere illo dignissimos esse?
@@ -73,12 +71,16 @@ const Resume = () => {
 
         {/* Start Projects section */}
         <section className=" mt-3 ">
+          <h1 className=" text-xl font-semibold py-1">Projects</h1>
+          <hr className=" bg-slate-300" />
           <Projects />
         </section>
         {/* End Projects section */}
 
         {/* Start Projects section */}
         <section className=" mt-3 ">
+          <h1 className=" text-xl font-semibold py-1">Skills</h1>
+          <hr className=" bg-slate-300" />
           <Skills />
         </section>
         {/* End Projects section */}
@@ -86,8 +88,8 @@ const Resume = () => {
         {/* Start Language section */}
         <section className=" mt-3 ">
           <h1 className=" text-xl font-semibold py-1">Languages</h1>
-          <hr className=" h-1 bg-slate-300" />
-          <div className=" p-3 ">
+          <hr className=" bg-slate-300" />
+          <div className=" py-3 ">
             <p>. English - Fluent</p>
             <p>. Bengali - Native</p>
           </div>
@@ -97,9 +99,49 @@ const Resume = () => {
         {/* Start Projects section */}
         <section className=" mt-3 ">
           <h1 className=" text-xl font-semibold py-1">Communications</h1>
-          <hr className=" h-1 bg-slate-300" />
+          <hr className=" bg-slate-300" />
         </section>
         {/* End Projects section */}
+
+        {/* Start Education section */}
+        <section className=" mt-3 ">
+          <h1 className=" text-xl font-semibold py-1">Education</h1>
+          <hr className=" bg-slate-300" />
+          <Education />
+        </section>
+        {/* End Education section */}
+      </div>
+
+      <div className="fixed bottom-3 w-full animate-pulse hover:animate-none">
+        <div className="flex justify-center items-center">
+          <div className=" bg-slate-300 flex justify-between items-center py-1 px-5 shadow-lg dark:bg-[#0d463f] rounded-full w-48">
+            <button>
+              <Link to="https://github.com/ibrahimk4111" target="_blank">
+                <AiFillGithub size={20} className=" hover:scale-125 transition-all duration-300 ease-in " />
+              </Link>
+            </button>
+            <button>
+              <Link to="https://github.com/ibrahimk4111" target="_blank">
+                <IoLogoWhatsapp size={20} fill="green" className=" hover:scale-125 transition-all duration-300 ease-in " />
+              </Link>
+            </button>
+            <button>
+              <Link to="https://github.com/ibrahimk4111" target="_blank">
+                <FaXTwitter size={20} fill="black" className=" hover:scale-125 transition-all duration-300 ease-in "/>
+              </Link>
+            </button>
+            <button>
+              <Link to="https://github.com/ibrahimk4111" target="_blank">
+                <AiFillFacebook size={20} fill="blue" className=" hover:scale-125 transition-all duration-300 ease-in "/>
+              </Link>
+            </button>
+            <button>
+              <Link to="https://github.com/ibrahimk4111" target="_blank">
+                <AiFillYoutube size={20} fill="red" className=" hover:scale-125 transition-all duration-300 ease-in "/>
+              </Link>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
