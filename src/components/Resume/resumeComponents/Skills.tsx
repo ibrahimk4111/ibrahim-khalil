@@ -65,9 +65,7 @@ const Skills = () => {
     "border border-slate-300 rounded-full p-1 flex items-center gap-1";
   return (
     <div>
-      <h1 className=" text-xl font-semibold py-1">Skills</h1>
-      <hr className=" h-1 bg-slate-300" />
-      <ul className=" container flex flex-wrap gap-2 p-3">
+      <ul className=" flex flex-wrap gap-2 py-3">
         {liItems.map((item) => (
           <li key={item.text} className={liClassName}>
             {item.icon}
