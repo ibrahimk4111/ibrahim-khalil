@@ -3,11 +3,9 @@ import Hero from "./homeComponents/Hero";
 
 const Home = () => {
   return (
-    <div>
-      <div >
-        <Hero />
-        <GetInTouch />
-      </div>
+    <div className=" md:ml-12 ">
+      <Hero />
+      <GetInTouch />
     </div>
   );
 };

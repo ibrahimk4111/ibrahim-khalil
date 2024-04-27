@@ -7,13 +7,9 @@ const LayOut = () => {
   return (
     <>
       <Navbar />
-      <div className=" flex ">
-        <Asidebar />
-        <div className=" w-full md:ml-12 ">
-          <Outlet />
-          <Footer />
-        </div>
-      </div>
+      <Asidebar />
+      <Outlet />
+      <Footer />
     </>
   );
 };

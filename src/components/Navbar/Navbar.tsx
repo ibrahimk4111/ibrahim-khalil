@@ -10,7 +10,7 @@ const Navbar:React.FC = () => {
   
   const { setExpanded } = React.useContext(CreateContextProvider);
   return (
-    <div className=" p-2 flex justify-between items-center h-12 w-full bg-white dark:bg-bgColorsInDark border-b-2 border-slate-200 sticky top-0 z-30">
+    <div className=" p-2 flex justify-between items-center h-[8vh] w-full bg-white dark:bg-bgColorsInDark border-b-2 border-slate-200 sticky top-0 z-30">
       {/* Start head or toggle section */}
       <div
         onClick={() => setExpanded((curr) => !curr)}

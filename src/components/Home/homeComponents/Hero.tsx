@@ -3,7 +3,7 @@ import { BiCloudDownload, BiCoffee } from "react-icons/bi";
 const Hero = () => {
   return (
     <>
-      <div className=" py-10 dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark ">
+      <div className=" snap-start py-5 h-[100vh] flex justify-center items-center dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark ">
         <div className=" container grid grid-cols-12 gap-y-10">
           <div className=" sm:col-span-9 col-span-12 flex justify-center items-center">
             <div className=" relative ">
