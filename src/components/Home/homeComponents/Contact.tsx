@@ -27,7 +27,7 @@ const Contact = () => {
             </button>
             <button>
               <Link to="https://github.com/ibrahimk4111" target="_blank">
-                <AiFillFacebook size={20} fill="blue" className={iconClassName} />
+                <AiFillFacebook size={20} className='hover:scale-125 transition-all duration-300 ease-in text-blue-600' />
               </Link>
             </button>
             <button>

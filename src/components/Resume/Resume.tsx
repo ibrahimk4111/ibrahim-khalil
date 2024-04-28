@@ -2,13 +2,13 @@ import { MdCall, MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Projects from "./resumeComponents/Projects";
 import Skills from "./resumeComponents/Skills";
-import { GoLocation } from "react-icons/go";
 import Education from "./resumeComponents/Education";
 import Contact from "../Home/homeComponents/Contact";
+import { HiLocationMarker } from "react-icons/hi";
 
 const Resume = () => {
   const liClassName =
-    "border border-slate-300 rounded-full px-1 flex justify-center items-center gap-1";
+    "border border-slate-300 rounded-full px-1 flex items-center gap-1";
   return (
     <div className="p-2 pb-10 dark:bg-bgColorsInDark dark:text-white">
       <Link
@@ -31,7 +31,7 @@ const Resume = () => {
       <div className=" container flex flex-col gap-1">
         <div className=" mb-5 ">
           <h1 className=" text-center font-semibold text-3xl uppercase">
-            Md. Ibrahim Khalil
+            Ibrahim Khalil
           </h1>
         </div>
 
@@ -47,7 +47,7 @@ const Resume = () => {
               <span className=" text-sm">01517-833 878</span>
             </li>
             <li className={liClassName}>
-              <GoLocation size={15} />
+              <HiLocationMarker size={15} />
               <span className=" text-sm ">Kakrail, Dhaka, Bangladesh</span>
             </li>
           </ul>
@@ -88,8 +88,7 @@ const Resume = () => {
           <h1 className=" text-xl font-semibold py-1">Languages</h1>
           <hr className=" bg-slate-300" />
           <div className=" py-3 ">
-            <p>. English - Fluent</p>
-            <p>. Bengali - Native</p>
+            <p>. English - Conversational</p>
           </div>
         </section>
         {/* End Language section */}

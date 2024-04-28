@@ -4,7 +4,8 @@ const Hero = () => {
   return (
     <>
       <div className=" snap-center py-5 h-[100vh] flex justify-center items-center dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark ">
-        <div className=" container grid grid-cols-12 gap-y-10">
+        <div className=" container grid grid-cols-12 gap-y-20">
+          {/* left side */}
           <div className=" sm:col-span-9 col-span-12 flex justify-center items-center">
             <div className=" relative ">
               <img
@@ -34,6 +35,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
+
+          {/* right side */}
           <div className=" sm:col-span-3 col-span-12 flex justify-center items-center dark:text-white sm:order-last order-first ">
             <div className="h-60 sm:h-auto rounded-full border-cyan-400 border overflow-hidden shadow-xl shadow-cyan-400 dark:drop-shadow-glow ">
               <img

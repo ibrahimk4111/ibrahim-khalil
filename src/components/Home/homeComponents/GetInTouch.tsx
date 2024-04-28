@@ -1,5 +1,5 @@
 import { BsSend } from "react-icons/bs";
-import { IoCallOutline } from "react-icons/io5";
+import { IoCallOutline, IoMailOutline } from "react-icons/io5";
 
 const GetInTouch = () => {
   return (
@@ -47,7 +47,7 @@ const GetInTouch = () => {
               </div>
             </div>
 
-            <button className=" bg-cyan-500 relative inline-flex group p-2 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+            <button onClick={(e)=>e.preventDefault()} className=" bg-cyan-500 relative inline-flex group p-2 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
               <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
               <span className="flex items-center gap-2 z-10 text-white">
                 <BsSend size={20} />
@@ -59,14 +59,14 @@ const GetInTouch = () => {
           {/* advice form  */}
           <div className=" md:hidden block">
             <h1 className=" my-3">Or</h1>
-            <form action="" className=" flex justify-start items-center gap-2 ">
+            <form action="submit" className=" flex justify-start items-center gap-2 ">
               <input
-                name="name"
+                name="description"
                 type=" text "
                 placeholder="leave an advice."
                 className=" bg-white dark:bg-[#0b3631] dark:placeholder:text-slate-400 p-2 rounded-md w-full focus:ring-1 ring-slate-300 outline-none"
               />
-              <button className=" bg-cyan-500 relative inline-flex group p-2 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+              <button onClick={(e)=>e.preventDefault()} className=" bg-cyan-500 relative inline-flex group p-2 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
                 <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
                 <span className="flex items-center gap-2 z-10 text-white">
                   <BsSend size={20} />
@@ -88,6 +88,12 @@ const GetInTouch = () => {
               <p>01766-993 449</p>
             </div>
           </div>
+          <div className=" flex items-center gap-2 mt-3">
+            <IoMailOutline size={20} />
+            <div className=" flex flex-wrap gap-1">
+              <p>ibrahimk4111@gmail.com</p>
+            </div>
+          </div>
           <div className=" md:block hidden">
             <h1 className=" my-5">Or</h1>
             <form action="" className="flex justify-start items-center gap-2 ">
@@ -97,7 +103,7 @@ const GetInTouch = () => {
                 placeholder="leave an advice."
                 className=" bg-white dark:bg-[#0b3631] dark:placeholder:text-slate-400 p-2 rounded-md w-full focus:ring-1 ring-slate-300 outline-none"
               />
-              <button className=" bg-cyan-500 relative inline-flex group p-2 rounded-md animate-bounce hover:animate-none hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+              <button onClick={(e)=>e.preventDefault()} className=" bg-cyan-500 relative inline-flex group p-2 rounded-md animate-bounce hover:animate-none hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
                 <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
                 <span className="flex items-center gap-2 z-10 text-white">
                   <BsSend size={20} />

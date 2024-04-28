@@ -15,7 +15,7 @@ interface propsType {
 const BlogPosts = ({ post }: propsType) => {
   return (
     <>
-      <div className=" bg-white dark:bg-[#082f2b] rounded-md">
+      <div className=" bg-white dark:bg-[#082f2b] dark:hover:bg-[#0b3d38] rounded-md">
         <div className=" h-52 lg:h-48 overflow-hidden rounded-t-md flex justify-center items-center ">
           <img
             src={post.img}
@@ -26,7 +26,7 @@ const BlogPosts = ({ post }: propsType) => {
         </div>
         <div className="flex flex-col justify-between gap-3 p-3 ">
           <header>
-            <h1 className=" cursor-pointer text-base font-medium underline underline-offset-4 hover:text-cyan-500 dark:text-white ">
+            <h1 className=" cursor-pointer text-base font-medium underline underline-offset-4 dark:text-white hover:text-cyan-500 ">
               {post.blogHeader}
             </h1>
           </header>
