@@ -4,7 +4,7 @@ import { FiMoon, FiSun } from "react-icons/fi";
 const DarkLightToggle = () => {
   const size = 18;
   const [toggleDark, setToggleDark] = React.useState<boolean>(false);
-  const [theme, setTheme] = React.useState<string>("dark");
+  const [theme, setTheme] = React.useState<string>("light");
   React.useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
