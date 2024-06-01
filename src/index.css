@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     scroll-behavior: smooth;
-    scrollbar-color: cyan;
+    /* scrollbar-color: cyan; */
 }

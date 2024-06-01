@@ -20,7 +20,7 @@ const Skills = () => {
   
   return (
     <div
-      className=" relative snap-start h-auto min-h-screen flex justify-center items-center dark:text-white dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark overflow-hidden "
+      className=" relative h-auto min-h-screen flex justify-center items-center dark:text-white dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark overflow-hidden "
     >
       <div className={` absolute -right-1/4 top-0 rotate-45 h-20 w-full transition-all duration-500 ease-in bg-blue-500/30 -z-10 `}></div>
       {/* <div className={` absolute -left-[500px] bottom-0 rotate-45 h-20 w-full transition-all duration-500 ease-in bg-sky-500/30 -z-10 `}></div> */}

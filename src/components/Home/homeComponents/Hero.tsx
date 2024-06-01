@@ -3,24 +3,23 @@ import { BiCloudDownload, BiCoffee } from "react-icons/bi";
 const Hero = () => {
   return (
     <>
-      <div className="snap-center py-5 min-h-screen h-auto flex justify-center items-center bg-slate-100 dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark overflow-hidden">
-        <div className=" container grid grid-cols-12 gap-y-20">
+      <div className="py-10 min-h-screen h-auto flex justify-center items-center bg-slate-100 dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark overflow-hidden">
+        <div className=" container grid grid-cols-12 gap-y-10">
           {/* left side */}
           <div className=" sm:col-span-9 col-span-12 flex justify-between items-center">
-            <div className=" relative  md:w-3/4 space-y-5">
+            <div className=" relative  md:w-3/4 p-3">
               <img
                 src="./pyramid.png"
                 alt="pyramin.png"
                 className=" absolute bottom-0 right-0 h-20 w-20"
+                loading="lazy"
               />
               <h1 className=" lg:text-6xl md:text-5xl text-3xl uppercase font-semibold dark:text-white">
                 Ibrahim Khalil
               </h1>
-              <p className=" dark:text-white text-xl ">Web Developer</p>
-              <p className=" text-slate-500 ">
-                More than 4+ years of practicing experience with web
-                developement in these era: React Js, Express Js, Node Js,
-                MongoDB, Javascript, Typescript, Redux and libraries.{" "}
+              <p className=" dark:text-white ">Web Developer</p>
+              <p className=" dark:text-slate-300 text-slate-500 text-sm my-3">
+                With practicing experience in web development, I specialize in React.js, Express.js, Node.js, MongoDB, JavaScript, TypeScript, Redux, and related libraries.
               </p>
               <div className=" flex gap-2">
                 <button className="bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
@@ -51,6 +50,7 @@ const Hero = () => {
                 src="./heroimg.png"
                 alt="..."
                 className=" w-auto h-auto max-h-full "
+                loading="lazy"
               />
             </div>
           </div>
