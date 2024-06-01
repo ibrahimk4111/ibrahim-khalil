@@ -1,8 +1,8 @@
 import * as React from "react";
 import AsidebarItem from "./AsidebarItem";
 import { NavLink } from "react-router-dom";
-import { CreateContextProvider } from "../Context/ContextProvider";
-import { navItems } from "../../json/navItem";
+import { CreateContextProvider } from "../../Context/ContextProvider";
+import { navItems } from "../../../json/navItem";
 
 
 const Asidebar = () => {

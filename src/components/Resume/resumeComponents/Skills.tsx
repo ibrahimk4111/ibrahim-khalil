@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { liItems } from "../../../json/liItemsForSkills";
+import { liItemsforResume } from "../../../json/liItemsForSkills";
 
 const Skills = () => {
   const liClassName =
@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <div>
       <ul className=" flex flex-wrap gap-2 py-3">
-        {liItems.map((item) => (
+        {liItemsforResume.map((item) => (
           <li key={item.text} className={liClassName}>
             {item.icon}
             <Link to={item.url} target="_blank" className="text-sm">
