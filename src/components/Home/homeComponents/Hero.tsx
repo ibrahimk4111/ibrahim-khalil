@@ -18,7 +18,7 @@ const Hero = () => {
                 Ibrahim Khalil
               </h1>
               <p className=" dark:text-white ">Web Developer</p>
-              <p className=" text-slate-500 text-sm my-3">
+              <p className=" dark:text-slate-300 text-slate-500 text-sm my-3">
                 With practicing experience in web development, I specialize in React.js, Express.js, Node.js, MongoDB, JavaScript, TypeScript, Redux, and related libraries.
               </p>
               <div className=" flex gap-2">
