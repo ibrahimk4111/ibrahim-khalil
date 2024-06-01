@@ -7,8 +7,8 @@ const Skills = () => {
   return (
     <div>
       <ul className=" flex flex-wrap gap-2 py-3">
-        {liItemsforResume.map((item) => (
-          <li key={item.text} className={liClassName}>
+        {liItemsforResume.map((item, index) => (
+          <li key={index} className={liClassName}>
             {item.icon}
             <Link to={item.url} target="_blank" className="text-sm">
               {item.text}

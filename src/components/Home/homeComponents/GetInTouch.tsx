@@ -5,7 +5,7 @@ const GetInTouch = () => {
   return (
     <div
       id="getintouch"
-      className=" snap-start py-10 min-h-screen h-auto flex justify-center items-center bg-slate-100 dark:text-white dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark "
+      className=" py-10 min-h-screen h-auto flex justify-center items-center bg-slate-100 dark:text-white dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark "
     >
       <div className=" container grid lg:grid-cols-3 md:grid-cols-12 grid-cols-1 gap-5">
         {/* left side form */}
