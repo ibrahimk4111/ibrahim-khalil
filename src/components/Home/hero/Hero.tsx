@@ -1,9 +1,12 @@
 import { BiCloudDownload, BiCoffee } from "react-icons/bi";
+import resume from "/Ibrahim_Khalil_Web_dev.pdf";
+// import { paths } from "../../../utils/paths";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   return (
     <>
-      <div className="py-10 min-h-screen h-auto flex justify-center items-center bg-slate-100 dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark overflow-hidden">
+      <div className="py-10 min-h-screen h-auto flex justify-center items-center dark:bg-gradient-to-l from-bgColorsInDark via-[#001f1b] to-bgColorsInDark overflow-hidden">
         <div className=" container grid grid-cols-12 gap-y-10">
           {/* left side */}
           <div className=" sm:col-span-9 col-span-12 flex justify-between items-center">
@@ -18,27 +21,24 @@ const Hero = () => {
                 Ibrahim Khalil
               </h1>
               <p className=" dark:text-white ">Web Developer</p>
-              <p className=" dark:text-slate-300 text-slate-500 text-sm my-3">
-                With practicing experience in web development, I specialize in React.js, Express.js, Node.js, MongoDB, JavaScript, TypeScript, Redux, and related libraries.
+              <p className=" dark:text-slate-300 text-slate-500 text-sm my-3 text-justify">            
+                I’m  have 3+ years practicing experience in web development with some local projects and for 4+ years I worked as a Computer Expert. I’m passionate about continual learning, assisting other developers with communication, consistently ensuring documentation-friendly development and maintenance, aiming to maximize both project outcome and client compensation by keeping up with the newest tech trends.
               </p>
               <div className=" flex gap-2">
-                <button className="bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+                <a href={resume} className="bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
                   <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
                   <span className="flex items-center gap-2 z-10 text-white">
                     <BiCloudDownload size={20} />
                     <span>Resume</span>
                   </span>
-                </button>
-                <button className=" bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
+                </a>
+                <NavLink to="#getintouch" className=" bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
                   <span className=" absolute top-0 left-0 w-0 group-hover:w-full h-full -z-1 transition-all duration-500 ease-in-out bg-cyan-400"></span>
-                  <a
-                    href="#getintouch"
-                    className="flex items-center gap-2 z-10 text-white"
-                  >
+                  <span className="flex items-center gap-2 z-10 text-white">
                     <BiCoffee size={20} />
                     <span>Hire me</span>
-                  </a>
-                </button>
+                  </span>
+                </NavLink>
               </div>
             </div>
           </div>

@@ -1,9 +1,9 @@
 import { MdCall, MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Projects from "./resumeComponents/Projects";
+import Projects from "./resumeComponents/WorkingExperiences";
 import Skills from "./resumeComponents/Skills";
 import Education from "./resumeComponents/Education";
-import Contact from "../Home/homeComponents/Contact";
+import Contact from "./resumeComponents/Contact";
 import { HiLocationMarker } from "react-icons/hi";
 
 const Resume = () => {
@@ -38,18 +38,24 @@ const Resume = () => {
         {/* Start address section */}
         <section>
           <ul className=" flex sm:flex-row flex-col justify-center lg:gap-3 gap-1">
-            <li className={liClassName}>
-              <MdEmail size={15} />
-              <span className=" text-sm">ibrahimk4111@gmail.com</span>
-            </li>
-            <li className={liClassName}>
-              <MdCall size={15} />
-              <span className=" text-sm">01517-833 878</span>
-            </li>
-            <li className={liClassName}>
-              <HiLocationMarker size={15} />
-              <span className=" text-sm ">Kakrail, Dhaka, Bangladesh</span>
-            </li>
+            <Link to="mailto:ibrahimk4111@gmail.com&subject:Invitation for Web development">
+              <li className={liClassName}>
+                <MdEmail size={15} />
+                <span className=" text-sm">ibrahimk4111@gmail.com</span>
+              </li>
+            </Link>
+            <Link to="">
+              <li className={liClassName}>
+                <MdCall size={15} />
+                <span className=" text-sm">01517-833 878</span>
+              </li>
+            </Link>
+            <Link to="">
+              <li className={liClassName}>
+                <HiLocationMarker size={15} />
+                <span className=" text-sm ">Kakrail, Dhaka, Bangladesh</span>
+              </li>
+            </Link>
           </ul>
         </section>
         {/* End address section */}
@@ -59,10 +65,12 @@ const Resume = () => {
           <h1 className=" text-xl font-semibold py-1">Career</h1>
           <hr className=" bg-slate-300" />
           <p className=" py-3 text-justify ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quae
-            suscipit ducimus ad iusto soluta obcaecati doloribus amet
-            necessitatibus iure nulla optio dolore facere illo dignissimos esse?
-            Repudiandae, commodi qui.
+            I have 5+ year working experience and 3+ years practicing experience
+            in web development with some local projects and for the last few
+            years I worked as a Computer Expert. I’m passionate about continual
+            learning and keeping up with the newest tech trends. I will be glad
+            and kind if your company gave me a chance to explore myself for the
+            future by calling an interview.
           </p>
         </section>
         {/* End Summary section */}
@@ -88,7 +96,7 @@ const Resume = () => {
           <h1 className=" text-xl font-semibold py-1">Languages</h1>
           <hr className=" bg-slate-300" />
           <div className=" py-3 ">
-            <p>. English - Conversational</p>
+            <p>English - Conversational</p>
           </div>
         </section>
         {/* End Language section */}

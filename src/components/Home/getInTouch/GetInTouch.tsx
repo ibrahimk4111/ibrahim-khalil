@@ -10,7 +10,7 @@ const GetInTouch = () => {
       <div className=" container grid lg:grid-cols-3 md:grid-cols-12 grid-cols-1 gap-5">
         {/* left side form */}
         <div className=" lg:col-span-2 md:col-span-8 col-span-1">
-          <h1 className=" text-2xl mb-5">
+          <h1 className=" text-xl mb-5 uppercase ">
             Get <span className=" font-bold">In Touch</span>
           </h1>
           {/* contact form */}
@@ -104,6 +104,7 @@ const GetInTouch = () => {
               <p>ibrahimk4111@gmail.com</p>
             </div>
           </div>
+          
           {/* advice form for big device */}
           <div className=" md:block hidden">
             <h1 className=" my-5">Or</h1>

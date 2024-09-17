@@ -1,4 +1,4 @@
-import postImage from '../../public/assunnah-complex.jpg'
+import postImage from '/assunnah-complex.jpg'
 
 export const posts = [
   {
