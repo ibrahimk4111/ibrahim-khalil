@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 
 const TopButton = () => {
