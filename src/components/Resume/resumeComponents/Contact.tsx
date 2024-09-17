@@ -1,12 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { AiFillFacebook, AiFillGithub, AiFillYoutube } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoLogoFacebook, IoLogoWhatsapp } from "react-icons/io";
+import { AiFillGithub } from "react-icons/ai";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { MdFacebook } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
-  const iconClassName = "";
   return (
     <div>
       <div className="fixed bottom-3 w-full animate-pulse hover:animate-none">
