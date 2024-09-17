@@ -104,6 +104,7 @@ const GetInTouch = () => {
               <p>ibrahimk4111@gmail.com</p>
             </div>
           </div>
+          
           {/* advice form for big device */}
           <div className=" md:block hidden">
             <h1 className=" my-5">Or</h1>

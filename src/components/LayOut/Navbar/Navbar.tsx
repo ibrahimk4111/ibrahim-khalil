@@ -2,6 +2,7 @@ import * as React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import DarkLightToggle from "./DarkLightToggle";
 import { CreateContextProvider } from "../../Context/ContextProvider";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const size = 22;
@@ -17,9 +18,20 @@ const Navbar: React.FC = () => {
         <RxHamburgerMenu size={size} />
       </div>
 
-      <div className=" dark:text-white ">
-        <h1 className=" text-2xl">Ibrahim Khalil</h1>
-      </div>
+      <ul className=" dark:text-white flex gap-2 items-center justify-between text-sm ">
+        <li>
+          <Link to="#" className=" px-2 py-1 bg-slate-200/30 backdrop-blur-md rounded-md hover:bg-slate-200 ">About</Link>
+        </li>
+        <li>
+          <Link to="#" className=" px-2 py-1 bg-slate-200/30 backdrop-blur-md rounded-md hover:bg-slate-200 ">Projects</Link>
+        </li>
+        <li>
+          <Link to="#" className=" px-2 py-1 bg-slate-200/30 backdrop-blur-md rounded-md hover:bg-slate-200 ">Skills</Link>
+        </li>
+        <li>
+          <Link to="#" className=" px-2 py-1 bg-slate-200/30 backdrop-blur-md rounded-md hover:bg-slate-200 ">Contact</Link>
+        </li>
+      </ul>
       
       <DarkLightToggle />
     </div>

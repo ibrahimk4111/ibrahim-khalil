@@ -8,9 +8,9 @@ const Skills = () => {
       ></div>
       {/* <div className={` absolute -left-[500px] bottom-0 rotate-45 h-20 w-full transition-all duration-500 ease-in bg-sky-500/30 -z-10 `}></div> */}
       {/* Your div content here */}
-      <div className=" container mx-auto py-20 ">
+      <div className=" container mx-auto py-10 ">
         <div>
-          <h1 className=" text-xl mb-6 uppercase">
+          <h1 className=" text-xl mb-10 uppercase text-center underline underline-offset-8 ">
             My <span className=" font-bold">Skillsets</span>
           </h1>
           <div>
@@ -38,7 +38,7 @@ export function SkillsTab() {
               {item?.icons.map((iconItem, index) => (
                 <div key={index} className=" flex items-center justify-center gap-1" >
                   <span>{iconItem.icon}</span>
-                  <p className=" text-sm bg-slate-300/30 px-1 rounded-sm">{iconItem.name}</p>
+                  <p className=" text-sm bg-slate-300/30 px-1 rounded-md">{iconItem.name}</p>
                 </div>
               ))}
             </div>

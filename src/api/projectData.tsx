@@ -12,7 +12,7 @@ export const projects: projectsType = [
   {
     title: "Blog Web App",
     description:
-      "A user interface (UI) is the critical point of interaction between users and computer systems, emphasizing intuitive usability, effective design, and enhancing the overall user experience. A user interface (UI) is the critical point of interaction between users and computer systems, emphasizing intuitive usability, effective design, and enhancing the overall user experience. A user interface (UI) is the critical point of interaction between users and computer systems, emphasizing intuitive usability, effective design, and enhancing the overall user experience. A user interface (UI) is the critical point of interaction between users and computer systems, emphasizing intuitive usability, effective design, and enhancing the overall user experience.",
+      "A user interface (UI) is the  design, and enhancing the overall user experience. A user interface (UI) is the critical point of interaction between users and computer systems, emphasizing intuitive usability, effective design, and enhancing the overall user experience.",
     img: postImage,
     frontend: ["React Vite", "Typescript", "Tailwindcss", "Redux" ],
     backend: []

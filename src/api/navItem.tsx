@@ -1,5 +1,5 @@
 import { FaBlogger } from "react-icons/fa6";
-import { BiCloudDownload } from "react-icons/bi";
+// import { BiCloudDownload } from "react-icons/bi";
 import { paths } from "../utils/paths";
 import { FaHome } from "react-icons/fa";
 
@@ -16,9 +16,9 @@ export const navItems = [
       text: "Blogs",
       icon: <FaBlogger size={size} fill="orange" />
     },
-    {
-      route: paths.Resume,
-      text: "Resume",
-      icon: <BiCloudDownload size={size} />
-    },
+    // {
+    //   route: paths.Resume,
+    //   text: "Resume",
+    //   icon: <BiCloudDownload size={size} />
+    // },
   ];
