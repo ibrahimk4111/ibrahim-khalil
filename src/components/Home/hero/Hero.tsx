@@ -22,7 +22,7 @@ const Hero = () => {
               </h1>
               <p className=" dark:text-white ">Web Developer</p>
               <p className=" dark:text-slate-300 text-slate-500 text-sm my-3 text-justify">            
-                I’m  have 3+ years practicing experience in web development with some local projects and for 4+ years I worked as a Computer Expert. I’m passionate about continual learning, assisting other developers with communication, consistently ensuring documentation-friendly development and maintenance, aiming to maximize both project outcome and client compensation by keeping up with the newest tech trends.
+                I have 3+ years practicing experience in web development with some local projects and for 4+ years I worked as a Computer Expert. I’m passionate about continual learning, assisting other developers with communication, consistently ensuring documentation-friendly development and maintenance, aiming to maximize both project outcome and client compensation by keeping up with the newest tech trends.
               </p>
               <div className=" flex gap-2">
                 <a href={resume} className="bg-cyan-500 relative inline-flex group p-2 mt-5 rounded-md hover:ring-1 ring-offset-1 transition-all overflow-hidden dark:hover:drop-shadow-glow ">
